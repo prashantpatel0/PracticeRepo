@@ -15,10 +15,13 @@ void print_array(int arr[], int n){
     cout<<endl;
   }
 }
-void main(){
+int main()
+{
   int arr[]={1,2,3,4,5};
   int n = sizeof(arr) / sizeof(arr[0]);
   print_array(arr, n);
   reverse_array(arr,0,n-1);
+  cout<<"Reverse of array"<<endl;
   print_array(arr, n);
+  return 0;
 }
