@@ -1,15 +1,16 @@
 #include<iostream>
 using namespace std;
 void reverse_array(int arr[],int start, int end){
-  int temp = arr[start];
-  arr[start] = arr[end];
-  arr[end] = temp;
-  start++;
-  end--;
-  
+  while(start<end){
+    int temp = arr[start];
+    arr[start] = arr[end];
+    arr[end] = temp;
+    start++;
+    end--;
+  }
 }
 void print_array(int arr[], int n){
-  for(int i=0;i<n;i++)
+  for(int i=0;i<n ;i++)
   {
     cout<<arr[i]<<"";
     cout<<endl;
